@@ -1,6 +1,9 @@
-package com.example;
+package com.example.cdi;
 
 import javax.enterprise.inject.Produces;
+
+import com.example.cdi.foreign.ForeignClass1;
+import com.example.cdi.foreign.ForeignClass2;
 
 public class ForeignClassProducer {
 

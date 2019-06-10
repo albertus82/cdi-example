@@ -1,8 +1,8 @@
-package com.example;
+package com.example.cdi.foreign;
 
 import javax.annotation.PreDestroy;
 
-public class LocalClass1 {
+public class ForeignClass2 {
 
 	public void sayHello() {
 		System.out.println("Hello from " + getClass());
@@ -10,7 +10,7 @@ public class LocalClass1 {
 
 	@PreDestroy
 	void destroy() {
-		System.out.println("@PreDestroy " + getClass());
+		throw new IllegalStateException("Unexpected @PreDestroy for " + getClass());
 	}
 
 }

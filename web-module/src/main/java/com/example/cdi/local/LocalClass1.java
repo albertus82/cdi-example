@@ -1,8 +1,8 @@
-package com.example;
+package com.example.cdi.local;
 
 import javax.annotation.PreDestroy;
 
-public class ForeignClass2 {
+public class LocalClass1 {
 
 	public void sayHello() {
 		System.out.println("Hello from " + getClass());

@@ -1,8 +1,8 @@
-package com.example;
+package com.example.cdi.local;
 
 import javax.annotation.PostConstruct;
 
-public class ForeignClass1 {
+public class LocalClass2 {
 
 	public void sayHello() {
 		System.out.println("Hello from " + getClass());

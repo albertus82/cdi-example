@@ -1,8 +1,8 @@
-package com.example;
+package com.example.cdi.foreign;
 
 import javax.annotation.PostConstruct;
 
-public class LocalClass2 {
+public class ForeignClass1 {
 
 	public void sayHello() {
 		System.out.println("Hello from " + getClass());
@@ -10,7 +10,7 @@ public class LocalClass2 {
 
 	@PostConstruct
 	void init() {
-		System.out.println("@PostConstruct " + getClass());
+		throw new IllegalStateException("Unexpected @PostConstruct for " + getClass());
 	}
 
 }
